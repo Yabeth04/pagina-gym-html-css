@@ -1,0 +1,441 @@
+/*ESTILOS GENERALES DE LA PAGINA*/
+@import url('https://fonts.googleapis.com/css2?fonily=Poppins:wght@4 00;500;600;700;800&display=swap*');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+video, img{
+    height: 100px;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: #161D25;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*ESTILOS HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+h1{
+    color: #E0003E;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.navegacion-header{
+    padding: 25px;
+}
+
+.navegacion-header ul{
+    display: flex;
+}
+
+.navegacion-header ul li .sp{
+    color: white;
+    padding: 0.40em 1.2em;
+
+}
+
+.navegacion-header ul li .sp{
+    font-size: 15px;
+    color:white;
+}
+
+.navegacion-header .sp:hover{
+    border-radius: 20px;
+    padding: 0.40em 1.2em;
+    color: #E0003E;
+}
+
+.important-button{
+    padding: 1.1em 1.1em;
+    color: white;
+    background-color: #E0003E;
+    border-radius: 10px;
+    font-size: 0.90;
+}
+
+.navegacion-header ul li .important-button{
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    font-weight: 600;
+}
+
+.navegacion-header ul li .important-button:hover{
+    background-color: #b00032;
+}
+/*SEGUNDA SECCION HERO-VIDEO*/
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.txt-hero{
+    width: 900px;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.hero-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.txt-hero span{
+    text-transform: uppercase;
+    color: #E0003E;
+    font-weight: 800;
+    font-size: 0.40em;
+}
+
+.txt-hero h2{
+    font-size:3.7em;
+    text-transform: uppercase;
+}
+
+.txt-hero p{
+    width: 800px;
+    font-size: 1.1em;
+    margin: 0.90em;
+}
+
+.box-p{
+    align-items: center;
+}
+
+.botones-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones-menu a{
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    padding: 13px 30px;
+    background-color: #E0003E;
+}
+
+.botones-menu a:hover{
+    background-color:#94002a;
+}
+
+/*SEGUNDA SECCION SERVICIOS*/
+.services{
+    justify-content: center;
+    align-items: center ;
+    display:grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services h3{
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: 5px;
+    color: white;
+}
+
+.services p{
+    font-size: 1em;
+    width: 200px;
+}
+
+.icon-service{
+    justify-content: center;
+    align-items: center ;
+    margin: 10px;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 200px;
+    width: 350px;
+}
+
+.services img{
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.icon-service h3{
+    margin-bottom: 12px;
+}
+
+/*TERCERA SECCION DE SOBRE NOSOTROS*/
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    align-items: center;
+    color: white;
+}
+
+.red{
+    color: #E0003E;
+    margin-bottom: 10px;
+    font-size: 0.90em;
+    text-transform: uppercase;
+}
+
+.img-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-about img{
+    height: 480px;
+    border-radius: 20px;
+}
+
+ .txt-important{
+    font-size: 2.7em;
+    color: white;
+}
+
+hr{
+    margin: 5px 0px;
+    width: 60px;
+    border-color: #E0003E;
+    border-width: 2px;
+}
+
+.about p{
+    margin: 20px 0px;
+    font-size: 1.07em;
+}
+
+/*CUARTA SECCION TESTIMONIOS*/
+.testimonios{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+    flex-direction: column;
+}
+
+.first-testimonio{
+    color: white;
+    width: 520px;
+    background-color:#272d35;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: rgb(19, 19, 19) 2px 2px 20px;
+}
+
+.box-testi{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-testimonio1{
+    background-image: url(/img/t1.jpg);
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.foto-testimonio2{
+    background-image: url(/img/t2.jpg);
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.foto{
+    border-width: 3px;
+    border-color: red;
+    border-style:solid;
+    height: 80px;
+    width: 80px;
+}
+
+.first-testimonio h3{
+    margin: 6px;
+}
+
+.testimonios hr{
+    margin-bottom: 20px;
+}
+
+/*FROMULARIO*/
+.contacto hr{
+    margin-bottom: 20px;
+}
+
+.contacto{
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box-form form{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+
+.relleno-form{
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+   border: 1px solid white;
+}
+
+.contacto video{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+}
+
+ .boton-input{
+    margin-top: 10px;
+    border-radius: 20px;
+    padding:10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color:#E0003E;
+    color: white;
+    font-weight: bold;
+
+}
+
+.boton-input:hover{
+    background-color: #b00032;
+}
+
+::placeholder{
+    text-transform:capitalize;
+    font-size: 1.10em;
+}
+
+input{
+    color: white;
+}
+
+/*NUESTROS GIMNASIOS*/
+.about-gym{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:70vh;
+    align-items: center;
+}
+
+.about-gym h4{
+    text-transform: capitalize;
+}
+
+.about-gym video{
+    height: 280px;
+}
+
+.list-icon-gym li img{
+    height: 40px;
+}
+
+.list-icon-gym img{
+    margin: 10px;
+}
+
+.about-gym hr{
+    margin-bottom: 40px;
+}
+
+.list-icon-gym li{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 20px 0px 20px 0px;
+}
+
+.list-icon-gym p{
+
+    margin: 0px 0px 0px 10px;
+}
+
+/*FOOTER*/
+footer nav{
+    align-items: center;
+    justify-content: center;
+    background-color:#151a20;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+footer nav li {
+    margin:10px;
+}
+
+footer nav{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.foot{
+    padding: 20px;
+    margin: 0px 50px 0px 50px;
+}
+
+@media (min-width: 360px){
+    .container{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content:none;
+    }
+}
